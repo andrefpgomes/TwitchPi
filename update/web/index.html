@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-PT">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Twitch Pi</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="wrap">
+<header><div><h1>Twitch Pi</h1><p>Dashboard remoto</p></div><span id="online" class="pill">A verificar…</span></header>
+<section class="card"><h2>📺 Visualização</h2><div class="current"><span class="label">LIVE ATUAL</span><div id="channel" class="channel">Nenhuma</div><div id="status">Parado</div></div><div class="controls"><button id="startBtn" class="start">▶️ Começar a ver</button><button id="stopBtn" class="stop">⏹️ Parar visualização</button></div><div id="controlMessage" class="message"></div></section>
+<section class="card"><h2>🎁 Drops</h2><div class="dropInfo">O estado detalhado dos Drops continua a ser mostrado pela própria Twitch quando disponível.</div></section>
+<section class="card"><h2>🔐 Conta Twitch</h2><p class="hint">O login é feito diretamente no Twitch através do Chromium da Raspberry.</p><button id="loginBtn">🔐 Abrir login Twitch</button><div id="loginMsg" class="message"></div></section>
+<section class="card"><h2>📺 Alterar live</h2><div class="row"><input id="channelInput" placeholder="nome do canal Twitch"><button id="openBtn">Selecionar</button></div><div id="message" class="message"></div></section>
+<section class="card"><div class="sectionHead"><h2>⭐ Favoritos</h2><button id="refreshBtn" class="small">Atualizar</button></div><div id="favorites" class="favorites"></div></section>
+<section class="card"><button id="reloadBtn" class="wide">🔄 Reabrir live atual</button></section>
+<footer>Twitch Pi · Rede local</footer></main><script src="/app.js"></script></body></html>
